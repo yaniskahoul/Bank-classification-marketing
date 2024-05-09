@@ -1,0 +1,8 @@
+<!-- prediction_result.html -->
+{% extends 'base_generic.html' %}
+
+{% block content %}
+  <h1>Résultat de la prédiction</h1>
+  <p>{{ result }}</p>
+  <a href="{% url 'predict' %}">Retour</a>
+{% endblock %}
