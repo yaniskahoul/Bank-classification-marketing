@@ -1,0 +1,15 @@
+artifact_uri: file:///home/yanis/T%C3%A9l%C3%A9chargements/Projet%20chef%20d%27oeuvre/api_ai/notebooks/mlruns/0/d2bd0a373184403d91cec80e3826b6b1/artifacts
+end_time: 1715205759106
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d2bd0a373184403d91cec80e3826b6b1
+run_name: svm_classification
+run_uuid: d2bd0a373184403d91cec80e3826b6b1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715205662962
+status: 4
+tags: []
+user_id: yanis

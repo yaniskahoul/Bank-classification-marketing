@@ -1,0 +1,15 @@
+artifact_uri: file:///home/yanis/T%C3%A9l%C3%A9chargements/Projet%20chef%20d%27oeuvre/api_ai/notebooks/mlruns/0/20922f0947e64863b7eb7b736129c656/artifacts
+end_time: 1714210308304
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 20922f0947e64863b7eb7b736129c656
+run_name: painted-perch-334
+run_uuid: 20922f0947e64863b7eb7b736129c656
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1714210301633
+status: 3
+tags: []
+user_id: yanis

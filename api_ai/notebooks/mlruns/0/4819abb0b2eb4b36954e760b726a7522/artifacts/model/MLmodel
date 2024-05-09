@@ -1,0 +1,33 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.12
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.4.1.post1
+mlflow_version: 2.12.1
+model_size_bytes: 3815
+model_uuid: 1ac1617505fc443bbb4a7ce276b0874e
+run_id: 4819abb0b2eb4b36954e760b726a7522
+signature:
+  inputs: '[{"type": "long", "name": "age", "required": true}, {"type": "string",
+    "name": "job", "required": true}, {"type": "string", "name": "marital", "required":
+    true}, {"type": "string", "name": "education", "required": true}, {"type": "string",
+    "name": "defaut", "required": true}, {"type": "string", "name": "housing", "required":
+    true}, {"type": "string", "name": "loan", "required": true}, {"type": "long",
+    "name": "duration", "required": true}, {"type": "long", "name": "campaign", "required":
+    true}, {"type": "long", "name": "pdays", "required": true}, {"type": "long", "name":
+    "previous", "required": true}, {"type": "double", "name": "cons_price_idx", "required":
+    true}, {"type": "double", "name": "cons_conf_idx", "required": true}, {"type":
+    "string", "name": "age_group", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-05-08 11:38:29.591928'

@@ -1,0 +1,7 @@
+[('preprocessor', ColumnTransformer(remainder='passthrough',
+                  transformers=[('num', StandardScaler(),
+                                 ['duration', 'campaign', 'pdays', 'previous',
+                                  'cons_price_idx', 'cons_conf_idx']),
+                                ('cat', OneHotEncoder(),
+                                 ['job', 'marital', 'education', 'defaut',
+                                  'housing', 'loan', 'age_group'])])), ('model', LogisticRegression(C=10, random_state=42))]

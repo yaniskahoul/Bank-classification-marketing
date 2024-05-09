@@ -1,0 +1,1 @@
+SVC(kernel='linear', probability=True, random_state=42)

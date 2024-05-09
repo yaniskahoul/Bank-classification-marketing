@@ -1,0 +1,15 @@
+artifact_uri: file:///home/yanis/T%C3%A9l%C3%A9chargements/Projet%20chef%20d%27oeuvre/api_ai/notebooks/mlruns/0/e6f0ceea363f43d18d2669c74f103f2a/artifacts
+end_time: 1715204963594
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e6f0ceea363f43d18d2669c74f103f2a
+run_name: first_logistic_regression
+run_uuid: e6f0ceea363f43d18d2669c74f103f2a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715204463256
+status: 3
+tags: []
+user_id: yanis

@@ -1,0 +1,11 @@
+[('preprocessor', ColumnTransformer(remainder='passthrough',
+                  transformers=[('num', StandardScaler(),
+                                 ['duration', 'campaign', 'pdays', 'previous',
+                                  'cons.price.idx', 'cons.conf.idx']),
+                                ('cat', OneHotEncoder(),
+                                 ['job', 'marital', 'education', 'default',
+                                  'housing', 'loan', 'age_group']),
+                                ('drop_feature', 'drop',
+                                 ['euribor3m', 'nr.employed', 'emp.var.rate',
+                                  'contact', 'month', 'day_of_week',
+                                  'poutcome'])])), ('model', LogisticRegression(random_state=42))]

@@ -1,0 +1,1 @@
+[('num', StandardScaler(), ['duration', 'campaign', 'pdays', 'previous', 'cons_price_idx', 'cons_conf_idx']), ('cat', OneHotEncoder(), ['job', 'marital', 'education', 'defaut', 'housing', 'loan', 'age_group'])]

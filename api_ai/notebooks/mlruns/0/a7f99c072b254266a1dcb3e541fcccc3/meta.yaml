@@ -1,0 +1,15 @@
+artifact_uri: file:///home/yanis/T%C3%A9l%C3%A9chargements/Projet%20chef%20d%27oeuvre/api_ai/notebooks/mlruns/0/a7f99c072b254266a1dcb3e541fcccc3/artifacts
+end_time: 1714205880301
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a7f99c072b254266a1dcb3e541fcccc3
+run_name: unleashed-horse-858
+run_uuid: a7f99c072b254266a1dcb3e541fcccc3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1714205878373
+status: 3
+tags: []
+user_id: yanis

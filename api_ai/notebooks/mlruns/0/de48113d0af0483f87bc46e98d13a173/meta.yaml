@@ -1,0 +1,15 @@
+artifact_uri: file:///home/yanis/T%C3%A9l%C3%A9chargements/Projet%20chef%20d%27oeuvre/api_ai/notebooks/mlruns/0/de48113d0af0483f87bc46e98d13a173/artifacts
+end_time: 1715206839067
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: de48113d0af0483f87bc46e98d13a173
+run_name: colorful-shoat-10
+run_uuid: de48113d0af0483f87bc46e98d13a173
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715206816640
+status: 3
+tags: []
+user_id: yanis

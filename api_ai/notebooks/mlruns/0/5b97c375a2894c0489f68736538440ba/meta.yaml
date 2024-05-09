@@ -1,0 +1,15 @@
+artifact_uri: file:///home/yanis/T%C3%A9l%C3%A9chargements/Projet%20chef%20d%27oeuvre/api_ai/notebooks/mlruns/0/5b97c375a2894c0489f68736538440ba/artifacts
+end_time: 1714209886535
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5b97c375a2894c0489f68736538440ba
+run_name: whimsical-foal-655
+run_uuid: 5b97c375a2894c0489f68736538440ba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1714209879982
+status: 3
+tags: []
+user_id: yanis
