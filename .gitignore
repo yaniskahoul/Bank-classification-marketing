@@ -1,0 +1,14 @@
+# Ignorer les fichiers générés par Python
+*.pyc
+
+# Ignorer les fichiers/dossiers spécifiques
+api_ai/__pycache__/
+api_ai/modele/
+api_ai/notebooks/feature_importance.html
+api_ai/notebooks/learning_curve.png
+api_ai/notebooks/mlruns/
+api_ai/notebooks/modelisation_sqlite.ipynb
+bank-additional-full.csv
+bank-additional-names.txt
+bdd/
+mlruns/

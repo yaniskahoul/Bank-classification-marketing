@@ -1,20 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
+    {% load static %}
+    <!-- Lien vers le CSS de Bootstrap -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Lien vers votre CSS personnalisé (si nécessaire) -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
 </head>
 <body>
-    <h1>Accueil</h1>
-    {% if user.is_authenticated %}
-    <p>Bienvenue, {{ user.get_full_name|default:user.username }}</p>
-    <!-- Formulaire de déconnexion -->
-    <form action="{% url 'logout' %}" method="post">
-        {% csrf_token %}
-        <button type="submit">Se déconnecter</button>
-    </form>
-{% else %}
-    <a href="{% url 'login' %}">Se connecter</a>
-{% endif %}
+    <div class="container mt-3">
+        <h1>Accueil</h1>
+        {% if user.is_authenticated %}
+            <p>Bienvenue, {{ user.get_full_name|default:user.username }}</p>
+            <!-- Formulaire de déconnexion -->
+            <form action="{% url 'logout' %}" method="post">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-primary">Se déconnecter</button>
+            </form>
+            <!-- Bouton vers la page predict -->
+            <a href="{% url 'predict' %}" class="btn btn-success mt-3">Prédiction</a>
+            {% else %}
+            <a href="{% url 'login' %}" class="btn btn-primary">Se connecter</a>
 
+            <!-- Bouton vers la page predict visible pour les utilisateurs non authentifiés également -->
+            <a href="{% url 'predict' %}" class="btn btn-success mt-3">Prédiction</a>
+        {% endif %}
+    </div>
+    <!-- Scripts Bootstrap et optionnels -->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 </body>
 </html>

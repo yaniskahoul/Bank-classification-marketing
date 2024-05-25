@@ -21,7 +21,7 @@ def user_login(request):
             user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
-                return redirect('home')  # Redirigez vers l'URL de la page d'accueil après connexion réussie
+                return redirect('home')  
     else:
         form = AuthenticationForm()
     return render(request, 'login.html', {'form': form})
@@ -30,18 +30,18 @@ def user_login(request):
 # Assurez-vous que le modèle est chargé correctement
 model = pickle.load(open("/home/yanis/Téléchargements/Projet chef d'oeuvre/api_ai/notebooks/mlruns/0/00b86de19af243328541a503787900f6/artifacts/logistic_regression_pipeline/model.pkl", 'rb'))
 
-@login_required(login_url='/accounts/login/')
+@login_required(login_url='/login/')
 def predict(request):
     if request.method == 'POST':
         form = PredictionForm(request.POST)
         if form.is_valid():
-            # Créez un DataFrame à partir des données du formulaire validées
+            # Création d'un DataFrame à partir des données du formulaire validées
             data_dict = form.cleaned_data
             data_dict['cons.conf.idx'] = data_dict.pop('cons_conf_idx')
             data_dict['cons.price.idx'] = data_dict.pop('cons_price_idx')
             data = pd.DataFrame([data_dict])
             
-            # Faites la prédiction
+            # Prédiction
             pred = model.predict(data)
             result = "Le client va souscrire" if pred[0] == 1 else "Le client ne va pas souscrire"
             return render(request, 'prediction_result.html', {'result': result})

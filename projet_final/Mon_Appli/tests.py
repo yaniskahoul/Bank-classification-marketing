@@ -9,12 +9,19 @@ class SimpleTest(TestCase):
         self.client = Client()
         self.home_url = reverse('home')
         self.login_url = reverse('login')
+        self.predict_url = reverse('predict')  # Ajout de l'URL de prédiction
 
     def test_home_view(self):
         # Test the home view
         response = self.client.get(self.home_url)
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'index.html')
+
+    def test_predict_view_no_login(self):
+        # Test access to predict view without being logged in
+        response = self.client.get(self.predict_url)
+        self.assertEqual(response.status_code, 302)  # expecting a redirect to login
+        self.assertTrue(response.url.startswith(self.login_url))  # redirect URL should start with the login URL
 
     def test_user_login_GET(self):
         # Test login page access
@@ -42,3 +49,5 @@ class SimpleTest(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'login.html')
         self.assertFalse(response.context['form'].is_valid())
+
+    
